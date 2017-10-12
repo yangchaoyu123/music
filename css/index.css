@@ -1,5 +1,6 @@
 html{
 	font-size: 20px;
+	-webkit-user-select: none;
 }
 #pagebox{
 	width: 16.0rem;
@@ -248,9 +249,6 @@ h3{
 	margin-left: 0.444rem;
 	float: left;
 }
-.zjt img,.zjt a{
-	box-shadow: 0.148rem 0.148rem 0.148rem black, -0.148rem -0.148rem  0.148rem black, -0.148rem 0.148rem 0.148rem black, 0.148rem -0.148rem 0.148rem black;
-}
 .geinfo1{
 	width: 7.111rem;
 	margin-left: 1.481rem;
@@ -274,13 +272,13 @@ h3{
 	margin-top: 0.593rem;
 }
 .bofangniu img{
-	width: 0.341rem;
-	height: 0.386rem;
-	position: relative;
+	width: 0.34rem;
+	height: 0.34rem;
+	position: absolute;
 	left: 50%;
 	top: 50%;
-	margin-top: -0.75rem;
-	margin-left: -0.155rem;
+	margin-top: -0.175rem;
+	margin-left: -0.175rem;
 }
 .tianjiag{
 	width: 0.889rem;
