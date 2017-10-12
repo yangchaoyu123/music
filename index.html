@@ -4,8 +4,6 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0,maximum-scale=1.0">
-		<meta name="x5-fullscreen" content="true">
-		<meta name="full-screen" content="yes">
 		<title>播放器</title>
 		<link rel="stylesheet" type="text/css" href="css/base.css">
 		<link rel="stylesheet" href="jquery.mobile-1.4.5/jquery.mobile-1.4.5.css" />
@@ -55,6 +53,11 @@
 				var zhuanjitu = document.getElementById('zhuanjitu');
 				var musicPlay = document.getElementById('musicPlay');
 				var timer = null;
+				document.querySelector('body').addEventListener('touchmove', function(e) {
+				    if (!document.getElementsByTagName('bottom')[0].contains(e.target)) {
+				        e.preventDefault();
+				    }
+				})
 				//			bofangniu[1].onclick = function(){
 				//			 	music(music2,zhuanjitu2,bofangf2);
 				//			}
@@ -426,6 +429,7 @@
 			<span>設置</a>
 		</a> -->
 		</div>
+		<bottom style="height: 1px"></bottom>
 	</body>
 
 </html>
