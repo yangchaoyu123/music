@@ -54,7 +54,7 @@
 				var musicPlay = document.getElementById('musicPlay');
 				var timer = null;
 				document.querySelector('body').addEventListener('touchmove', function(e) {
-				    if (!document.getElementsByTagName('bottom')[0].contains(e.target)) {
+				    if (document.getElementsByTagName('bottom')[0].contains(e.target)) {
 				        e.preventDefault();
 				    }
 				})
